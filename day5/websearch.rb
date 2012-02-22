@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 #
+# This script performs the same search using 4 different modules.
+# I created a method for each of the modules.
 
 require 'net/http'
 require 'open-uri'
