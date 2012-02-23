@@ -8,7 +8,7 @@ require 'open-uri'
 require 'hpricot'
 require 'nokogiri'
 
-url = URI.parse('http://satishtalim.github.com/webruby/chapter3.html')
+url = URI.parse('http'+'://satishtalim.github.com/webruby/chapter3.html')
 match_regex = /\bthe\b/i
 
 def match_nethttp(url, regex)
