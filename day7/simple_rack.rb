@@ -1,8 +1,5 @@
 # simple_rack.rb
 require 'rack'
+rack_proc = lambda { |env| [200, {}, ["Command line argument you typed was: #{ARGV.join(' ')}"]] }
 
-def my_method(env)
-  [200, {}, ["#{ARGV}"]]
-end
-
-Rack::Handler::WEBrick.run method(:my_method), :Port => 8500
+Rack::Handler::Thin.run rack_proc, :Port => 8500
