@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title Text Reversing service
+  %body
+    %h1 Text reversing service
+    %p
+      Welcome to the foremost text reversing service on the internet.
+    %p Please enter the text you would like to be reversed:
+    %form(action='/reverse' method='post')
+      %input(type='text' name='post[reverse]' id='reverse')
+      %input(type='submit' value='Go')
+

@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Text Reversing service
+  %body
+
+    %h1 Text reversing results
+
+    %p
+    - if params[:post][:reverse].empty?
+      It would appear you didn't enter anything. Care to <a href="/">try again</a>?
+
+    - unless params[:post][:reverse].empty?
+      After passing your text through the complex reversing algorithms patented by
+      Sir Edwin Rivington III, we have come up with the following result of your
+      input:
+      %hr
+      =params[:post][:reverse].to_s.reverse
+      %hr

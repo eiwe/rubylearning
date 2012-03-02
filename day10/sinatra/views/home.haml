@@ -1,0 +1,7 @@
+%h1 Form Parameters
+%p The example will display submitted form parameters directly via the params hash
+%form(action='/display' method='post')
+  %input(type='text' name='post[fname]' value='First name...' id='fname')
+  %input(type='text' name='post[lname]' value='Last name...' id='lname')
+  %input(type='submit' value='Display results')
+
